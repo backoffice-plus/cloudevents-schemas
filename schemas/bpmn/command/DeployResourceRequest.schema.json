@@ -1,4 +1,6 @@
 {
+  "$id": "io.miranum.bpmn.command.v1.DeployResourceRequest",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
     "resources": {
@@ -23,6 +25,5 @@
         }
       }
     }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+  }
 }

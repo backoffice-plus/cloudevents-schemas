@@ -1,4 +1,6 @@
 {
+  "$id": "io.miranum.bpmn.command.v1.CreateProcessInstanceResponse",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
     "processDefinitionKey": {
@@ -17,6 +19,5 @@
       "description": "the unique identifier of the created process instance; to be used wherever a request\nneeds a process instance key (e.g. CancelProcessInstanceRequest)",
       "type": "number"
     }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+  }
 }

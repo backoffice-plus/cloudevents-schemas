@@ -1,4 +1,6 @@
 {
+  "$id": "io.miranum.bpmn.command.v1.FailJobRequest",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
     "jobKey": {
@@ -21,6 +23,5 @@
       "description": "JSON document that will instantiate the variables at the local scope of the\njob's associated task; it must be a JSON object, as variables will be mapped in a\nkey-value fashion. e.g. { \"a\": 1, \"b\": 2 } will create two variables, named \"a\" and\n\"b\" respectively, with their associated values. [{ \"a\": 1, \"b\": 2 }] would not be a\nvalid argument, as the root of the JSON document is an array and not an object.",
       "type": "string"
     }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+  }
 }

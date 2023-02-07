@@ -1,8 +1,10 @@
 {
+  "$id": "io.miranum.bpmn.command.v1.ActivateJobsRequest",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
     "type": {
-      "description": "the job type, as defined in the BPMN process (e.g. <zeebe:taskDefinition\ntype=\"payment-service\" />)",
+      "description": "the job type, as defined in the BPMN process",
       "type": "string"
     },
     "worker": {
@@ -28,6 +30,5 @@
       "description": "The request will be completed when at least one job is activated or after the requestTimeout (in ms).\nif the requestTimeout = 0, a default timeout is used.\nif the requestTimeout < 0, long polling is disabled and the request is completed immediately, even when no job is activated.",
       "type": "number"
     }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+  }
 }
